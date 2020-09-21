@@ -27,7 +27,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
     <form class="form-inline " style="margin-left: 18%;">
-      <input class="form-control text-center" type="search" placeholder="Pesquise aqui uma loja ou produto" aria-label="Search" size="120">
+      <input class="form-control text-center" type="search" placeholder="Pesquise aqui uma loja ou produto" aria-label="Search" size="60">
     </form>
 
     <ul class="navbar-nav ml-auto">
@@ -40,6 +40,9 @@
       <li class="nav-item">
         <a class="nav-link fontLight" href="produtos.html">Produtos</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link fontLight" href="login.html">Login</a>
+      </li>
     </ul>
 
   </div>
@@ -49,17 +52,17 @@
 
 
 <div class="container colorBG" style="margin-top: 90px; border-radius: 100px 100px 100px 100px; border-style: solid round black;">
-  <form style="text-align: center;" action="" method="POST">
+  <form style="text-align: center;" action="empresaInsert.php" method="POST">
     <br><br>
     <h1>DADOS CADASTRAIS</h1>
     <label for="email">E-mail:</label><br>
     <input type="e-mail" name="email" id="email" placeholder="comida@email.com" required>
     <br><br>
     <label for="senha">Senha:</label><br>
-    <input type="password" name="senha" id="senha" required>
+    <input type="password" name="senha1" id="senha1" required>
     <br><br>
-    <label for="senha">Senha:</label><br>
-    <input type="password" name="senha" id="senha" required>
+    <label for="senha">Senha Novamente:</label><br>
+    <input type="password" name="senha2" id="senha2" >
     <br><br><br><br>
 
     <h1>IDENTIFICADORES:</h1>
@@ -73,32 +76,32 @@
     <input type="text" name="name" id="name" required placeholder="Ex.: Piracanjuga">
     <br><br>
     <label for="slogan">Slogan:</label>
-    <input type="text" name="slogan" id="slogan" required placeholder="Ex.: A Loja Das Lojas">
+    <input type="text" name="slogan" id="slogan"  placeholder="Ex.: A Loja Das Lojas">
     <br><br>
     <label for="desc">Descrição da Empresa:</label>
-    <input type="text" name="desc" id="desc" required placeholder="Ex.: Somos uma empresa que vende sapatos.">
+    <input type="text" name="desc" id="desc"  placeholder="Ex.: Somos uma empresa que vende sapatos.">
     <br><br><br><br>
 
     <h1>ENDEREÇO DA SEDE/FILIAL</h1>
     <label for="cep">CEP:</label>
-    <input type="text" name="cep" id="cep" required placeholder="99999-999">
+    <input type="text" name="cep" id="cep"  placeholder="99999-999">
     | <label for="pt">Ponto de Referência:</label>
-    <input type="text" name="pt" id="pt" required placeholder="Ex.: Campo de futebol">
+    <input type="text" name="pt" id="pt"  placeholder="Ex.: Campo de futebol">
     <br><br>
     <label for="rua">Rua:</label>
-    <input type="text" name="rua" id="rua" required placeholder="Ex.: Vasconcelos">
+    <input type="text" name="rua" id="rua"  placeholder="Ex.: Vasconcelos">
     | <label for="numero">N:</label>
     <input type="number" name="numero" id="numero" max="100" min="1">
     | <label for="bairro">Bairro:</label>
-    <input type="text" name="bairro" id="bairro" required placeholder="Ex.: Jd. St. Antônio">
+    <input type="text" name="bairro" id="bairro"  placeholder="Ex.: Jd. St. Antônio">
     <br><br>
     <label for="estado">Estado:</label>
-    <input type="text" name="estado" id="estado" required placeholder="Ex.: SP">
+    <input type="text" name="estado" id="estado"  placeholder="Ex.: SP">
     | <label for="cidade">Cidade:</label>
-    <input type="text" name="cidade" id="cidade" required placeholder="Ex.: Florianopolis">
+    <input type="text" name="cidade" id="cidade"  placeholder="Ex.: Florianopolis">
     <br><br><br><br>
 
-    <button type="button" class="btn btn-success btn-lg">Concluir Cadastro</button>
+    <input type="submit" class="btn btn-success btn-lg" value="Concluir Cadastro">
     <br><br>
   </form>
 </div>
