@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
 	<title>Droplet</title>
 
 	<link rel="stylesheet" href="Class.css">
@@ -52,7 +53,7 @@
 
 
 <div class="container colorBG"  style="margin-top: 90px; border-radius: 100px 100px 100px 100px; border-style: solid round black;">
-  <form style="text-align: center;" action="" method="POST">
+  <form style="text-align: center;" action="clienteInsert.php" method="POST">
     <br><br>
     <h1>DADOS CADASTRAIS</h1>
     <label for="email">E-mail:</label><br>
@@ -62,7 +63,7 @@
     <input type="password" name="senha" id="senha" required>
     <br><br>
     <label for="senha">Senha:</label><br>
-    <input type="password" name="senha" id="senha" required>
+    <input type="password" name="senha2" id="senha2" required>
     <br><br><br><br>
 
     <h1>DADOS PESSSOAIS</h1>
@@ -78,22 +79,22 @@
 
     <h1>CONTATO</h1>
     <label for="phone1">Telefone 1</label><br>
-  <input type="tel1" id="phone1" name="phone1" placeholder="(00)99999-9999" pattern="[0-9]{6}-[0-9]{5}" required>
+  <input type="tel1" id="phone1" name="phone1" placeholder="(00)99999-9999" required>
     <br><br>
     <label for="phone2">Telefone 2</label><br>
-  <input type="tel2" id="phone2" name="phone2" placeholder="(00)99999-9999" pattern="[0-9]{6}-[0-9]{5}" required>
+  <input type="tel2" id="phone2" name="phone2" placeholder="(00)99999-9999"  required>
     <br><br><br><br>
 
     <h1>ENDEREÇO DE ENTREGA</h1>
     <label for="cep">CEP:</label>
     <input type="text" name="cep" id="cep" required placeholder="99999-999">
-    | <label for="pt">Ponto de Referência:</label>
-    <input type="text" name="pt" id="pt" required placeholder="Ex.: Campo de futebol">
+    | <label for="pt">Complemento:</label>
+    <input type="text" name="complemento" id="comp" required placeholder="Ex.: Campo de futebol">
     <br><br>
     <label for="rua">Rua:</label>
     <input type="text" name="rua" id="rua" required placeholder="Ex.: Vasconcelos">
     | <label for="numero">N:</label>
-    <input type="number" name="numero" id="numero" max="100" min="1">
+    <input type="number" name="numero" id="numero" max="10000" min="1">
     | <label for="bairro">Bairro:</label>
     <input type="text" name="bairro" id="bairro" required placeholder="Ex.: Jd. St. Antônio">
     <br><br>
@@ -103,25 +104,7 @@
     <input type="text" name="cidade" id="cidade" required placeholder="Ex.: Florianopolis">
     <br><br><br><br>
 
-    <h1>ENDEREÇO DE ENTREGA</h1>
-    <label for="cep2">CEP:</label>
-    <input type="text" name="cep2" id="cep2" required placeholder="99999-999">
-    | <label for="pt2">Ponto de Referência:</label>
-    <input type="text" name="pt2" id="pt2" required placeholder="Ex.: Campo de futebol">
-    <br><br>
-    <label for="rua2">Rua:</label>
-    <input type="text" name="rua2" id="rua2" required placeholder="Ex.: Vasconcelos">
-    | <label for="numero2">N:</label>
-    <input type="number" name="numero2" id="numero2" max="100" min="1">
-    | <label for="bairro2">Bairro:</label>
-    <input type="text" name="bairro2" id="bairro2" required placeholder="Ex.: Jd. St. Antônio">
-    <br><br>
-    <label for="estado2">Estado:</label>
-    <input type="text" name="estado2" id="estado2" required placeholder="Ex.: SP">
-    | <label for="cidade2">Cidade:</label>
-    <input type="text" name="cidade2" id="cidade2" required placeholder="Ex.: Florianopolis">
-    <br><br>
-    <button type="button" class="btn btn-success btn-lg">Concluir Cadastro</button>
+    <input type="submit" class="btn btn-success btn-lg" value="Concluir Cadastro">
     <br><br>
   </form>
 </div>
