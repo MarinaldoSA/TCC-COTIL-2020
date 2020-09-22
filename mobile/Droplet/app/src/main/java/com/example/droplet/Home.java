@@ -18,6 +18,6 @@ public class Home extends Activity {
 
         webview = (WebView) findViewById(R.id.webView);
         webview.setWebViewClient(new WebViewClient());
-        webview.loadUrl("http://www.google.com");
+        webview.loadUrl("http://143.106.241.3/~cl18137/www");
     }
 }

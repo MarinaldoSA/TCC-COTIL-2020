@@ -55,6 +55,7 @@ $dataNascimento = gettext($_POST["date"]);
                 $stmt->bindParam(':complemento', $complemento);
                 $stmt->bindParam(':cidade', $cidade);
                 $stmt->bindParam(':estado', $estado);
+                $stmt->bindParam(':CPF', $cpf);
               
                 $stmt->execute();
 

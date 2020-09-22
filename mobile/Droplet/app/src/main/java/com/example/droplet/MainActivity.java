@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(a);
                 break;
             case R.id.btnCad:
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://143.106.241.3/~cl18137/www/login.html")));
                 break;
             case R.id.btnSair:
                 finish();
