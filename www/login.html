@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Droplet</title>
   <link rel="shortcut icon" type="image/x-icon" href="imagens/fav.ico">
 	<link rel="stylesheet" href="Class.css">
@@ -49,31 +49,31 @@
 </nav>
 <!-- End Nav bar-->
 
-
 <div class="container" style="background-color: white;">
   <div class="row pad" style="margin-top: 150px;">
     <div class="col-lg text-center">
         <h1>CLIENTES</h1>
         <img src="imagens/user.png" class="img-responsive" alt="...">
-        <form method="POST">
-        <label for="user">User:</label><br>
-        <input type="text" name="user" id="user" required placeholder="comida@email.com">
-        <br><br><br>
-        <label for="senha">Senha:</label><br>
-        <input type="password" name="senha" id="senha"  required>
-        <br><br>
-        <a href="index.html" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Logar</a>
-        <br><br>
+
+        <form method="POST" action="login.php">
+          <label for="email">Email:</label><br>
+          <input type="text" name="email" id="email" required placeholder="Digite seu email">
+          <br><br><br>
+          <label for="senha">Senha:</label><br>
+          <input type="password" name="senha" id="senha" required>
+          <br><br>
+          <input type="submit" class="btn btn-success btn-lg active" placeholder="Digite sua senha" value="Logar">
+          <br><br>
         </form>       
-        <a href="cadastroProduto.html" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Cadastar Como Cliente</a>      
+        <a href="cadastroCliente.html" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Cadastar Cliente</a>      
         </div>
 
         <div class="col-lg text-center" style="padding-top: 50px;">
         <h1>EMPRESA</h1>
         <img src="imagens/empresa.png" class="img-responsive" alt="...">
-
-        <a href="cadastroEmpresa.html" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Cadastar Como Empresa</a>
-            
+        <form>
+        <a href="cadastroEmpresa.html" class="btn btn-warning btn-lg active" role="button" aria-pressed="true">Cadastar Empresa</a>
+        </form>             
         </div>
   </div>
   <div class="row colorBG" style="height: 325px;">
@@ -100,32 +100,3 @@
 
 </body>
 </html>
-
-<!--
-<?php
-if ($_SERVER["REQUEST_METHOD"] === 'POST') {
-	  $login = $_POST["user"];
-    $senha = $_POST["senha"];
-    
-    $a = 123;
-    /*
-    $x = md5($senha);
-    $a = trim($login);
-    $a = strtolower($a);
-    $a = ucwords($a);
-    $a = strrev($a);
-    $a = strchr($a, "@", true);
-
-    */
-
-    if (($login != null) && ($senha == $a)){
-        session_start();
-        $_SESSION["senha"] = $senha;
-        header("location:log.php");
-    } else {
-        echo "!!!CORRIGIR SEU USUARIO AGORA!!!";
-    }
-}
-?>
-*/
--->

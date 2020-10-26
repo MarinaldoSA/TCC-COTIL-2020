@@ -6,5 +6,5 @@ try {
     } catch (PDOException $e) {
         $output = 'Impossível conectar BD : ' . $e . '<br>';
     }
-    echo $output;
+    //echo $output;
 ?>
