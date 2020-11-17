@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnCad:
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://143.106.241.3/~cl18137/www/login.html")));
+
+                //NÃO FUNCIONANDO CONEXÃO COM BD EXTERNO
+                // Intent b = new Intent(MainActivity.this, Cadastro.class);
+                // startActivity(b);
                 break;
             case R.id.btnSair:
                 finish();

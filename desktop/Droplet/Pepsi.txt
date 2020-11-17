@@ -1,0 +1,3 @@
+Pepsi zero,5.50,Refrigerante pepsi zero açúcar 300mL
+Pepsi,3.00,Refrigerante Pepsi 300mL
+Pepsi Twist,6.00,Refrigerante Pepsi com aroma de Limão

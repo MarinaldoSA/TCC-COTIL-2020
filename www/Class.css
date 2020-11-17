@@ -24,7 +24,7 @@
 			font-family: 'Rubik Mono One', sans-serif;
 		}
 		.fontWelcome{
-			color: green; 
+			color: #3590d5; 
 			font-size: 30px; 
 			font-family: 'Rubik Mono One', sans-serif;
 		}
@@ -44,4 +44,9 @@
 			color: black; 
 			font-size: 20px; 
 			font-family: 'Arial', sans-serif;
+		}
+
+		.div-card
+		{
+			margin-top: 5%;
 		}
